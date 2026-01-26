@@ -33,4 +33,42 @@ print(tekst.removeprefix("Witaj"))  # " Świecie"
 print(tekst.removesuffix("Świecie"))  # "Witaj "
 
 # strip() - usunięcie biłaych znaków, wiodących i kończących (spacji)
-print(tekst.removesuffix("Świecie").strip()) # "Witaj"
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
+encode_s = tekst.encode('utf-8')
+print(encode_s)  # b'Witaj \xc5\x9awiecie'
+# \xc5\x9a - kod litery w systemie szesnastkowym
+# \x dane w systemie szesnaastkowym
+print(type(encode_s))  # <class 'bytes'>
+print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+print(len(imie))  # długość tekstu 5
+# f - string, sformatowany string, wstrzykiwanie zmiennych do tekstu
+tekst_format = f"Mam na imię {imie}."
+print(tekst_format)  # Mam na imię Radek.
+
+tekst_format = "\tMam na imię {imie}\n i lubię Pythona.\b"
+print(tekst_format)
+# "	Mam na imię {imie}
+#  i lubię Pythona"
+# \t tabulator
+# \n nowa linia
+# \b backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format("Raaadek"))  # Witaj Raaadek!
+
+print("Witaj", imie)  # Witaj Radek
+
+print("""Tekst
+    wielolinijkowy""")
+
+# "Tekst
+#     wielolinijkowy"
+
+# komentarz traktowany jako dokumentacja
+"""Komentarz
+ wielolinijkowy"""
