@@ -143,4 +143,10 @@ print(lista_copy)  # ['Radek', 'Ola', 'Anna']
 lista_copy.sort()
 print(lista_copy)  # ['Anna', 'Ola', 'Radek']
 
+lista_copy.sort(reverse=True)  # sortowanie i odwróćenie
+print(lista_copy)  # ['Radek', 'Ola', 'Anna']
+
+lista_copy.reverse()  # tylko odwracanie
+print(lista_copy)  # ['Anna', 'Ola', 'Radek']
+
 
