@@ -77,3 +77,5 @@ print(f"Prawidłowa odpowiedż dla: {odp} to: {pol_ang.get(odp.strip().casefold(
 # Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
 # Podaj słówko do przetłumaczenia: Pies
 # Prawidłowa odpowiedż dla:  Pies to: dog
+
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
