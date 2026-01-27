@@ -22,7 +22,7 @@ if odp:  # blok programu wykonany gdy warunek True
 
 print("Dalsza część programu")
 
-odp = "Radek"
+odp = "Radek"  # wpisanie danych do zmiennej
 if odp:
     print("Dane zostały wczytane")
 # Dane zostały wczytane
@@ -34,6 +34,6 @@ if odp == "Radek":  # porównanie
 odp = 0
 if odp:
     print("Działa")
-else: # w innym przypadku, wartość domyślna
+else:  # w innym przypadku, wartość domyślna
     print("Zero -> False")
 # Zero -> False
