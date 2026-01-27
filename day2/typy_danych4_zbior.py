@@ -67,3 +67,16 @@ zbior.update(zbior_2)
 print(zbior)
 # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 
+krotka = tuple(zbior)
+print(krotka)
+
+lista = list(krotka)
+print(lista)
+# {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+# (777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62)
+# [777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62]
+
+print(667 in zbior)  # True
+print(667 in lista)  # True
+print(667 in krotka)  # True
+print(778 in zbior)  # False
