@@ -120,3 +120,11 @@ spam -= 1    spam = spam - 1
 spam *= 1    spam = spam * 1
 spam /= 1    spam = spam / 1
 spam %= 1    spam = spam % 1
+
+# https://www.w3schools.com/python/
+https://www.hackerrank.com/auth/login
+https://pl.altapps.net/soft/hackerrank-com
+
+blake8 - formater w vscode
+git/gitlens
+devcotainers
