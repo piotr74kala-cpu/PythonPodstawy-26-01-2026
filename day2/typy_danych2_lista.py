@@ -38,3 +38,69 @@ print(lista[-2])  # Anna
 # ['Radek', 'Tomek', 'Piotr', 'Zenek', 'Anna', 'Magda']
 #      0       1         2        3       4        5
 #      -6       -5       -4       -3       -2      -1
+
+# slicowanie - fragment listy
+print(lista[0:3])  # [start:stop], ['Radek', 'Tomek', 'Piotr'] indeksy 012
+print(lista[:3])  # ['Radek', 'Tomek', 'Piotr']
+
+print(lista[2:])  # ['Piotr', 'Zenek', 'Anna', 'Magda'], z ostatnim włącznie
+print(lista[2:5])  # ['Piotr', 'Zenek', 'Anna'], bez ostatniego
+print(lista[2:9])  # ['Piotr', 'Zenek', 'Anna', 'Magda']
+print(lista[12:26])  # []
+
+print(lista[:])
+# ['Radek', 'Tomek', 'Piotr', 'Zenek', 'Anna', 'Magda']
+
+# ['Radek', 'Tomek', 'Piotr', 'Zenek', 'Anna', 'Magda']
+#      0       1         2        3       4        5
+#      -6       -5       -4       -3       -2      -1
+print(lista[-2:0])  # [4:0], []
+print(lista[0:-2])  # [0:4], ['Radek', 'Tomek', 'Piotr', 'Zenek']
+
+# range() - generuje liczby z zakresu (int)
+lista_15 = list(range(15))
+print(lista_15)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+print(lista[::2])  # ['Radek', 'Piotr', 'Anna'], [start:stop:krok]
+print(lista_15[::3])  # [0, 3, 6, 9, 12]
+
+print(list(range(0, 15, 2)))  # (start, stop, krok)
+# [0, 2, 4, 6, 8, 10, 12, 14]
+
+# wyswietlic listę w odwrotnej kolejnosci
+print(lista[::-1])
+# ['Magda', 'Anna', 'Zenek', 'Piotr', 'Tomek', 'Radek']
+
+# numpy - biblioteka do pracy z tablicami/macierzami
+# nadpisanie elementu na wskazanym indeksie
+lista[3] = "Asia"
+print(lista)  # ['Radek', 'Tomek', 'Piotr', 'Asia', 'Anna', 'Magda']
+
+# wstawienie elemntu na wskazanym indeksie, pomiędzy inne elementy
+lista.insert(1, "Ola")
+print(lista)  # ['Radek', 'Ola', 'Tomek', 'Piotr', 'Asia', 'Anna', 'Magda']
+
+# stworzyc pusta liste, dodac element na indeksie 1
+lista_darek = []
+lista_darek.insert(1, "Darek")
+print(lista_darek)  # ['Darek']
+
+# usuniecie elementu z listy po elemencie,, pierwszy napotkany
+lista.remove("Tomek")
+print(lista)  # ['Radek', 'Ola', 'Piotr', 'Asia', 'Anna', 'Magda']
+# dodajemy np.: Piotr, usunąc Piotr
+lista.append("Piotr")
+print(lista)
+lista.remove("Piotr")
+print(lista)  # ['Radek', 'Ola', 'Asia', 'Anna', 'Magda', 'Piotr']
+
+# usunięcie po indeksie, zwraca element usunięty
+# pop()
+print(lista.pop(2))  # Asia
+zmienna = lista.pop(-1)
+print(zmienna)  # Piotr
+
+print(lista.pop())  # Magda, usunie ostatni element
+print(lista)  # ['Radek', 'Ola', 'Anna']
+
+# sprawdzenie indexu dla danego elementu, pierwszy napotkany
+print(lista.index("Ola"))  # indeks 1
