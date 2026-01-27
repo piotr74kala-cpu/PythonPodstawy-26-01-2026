@@ -128,3 +128,4 @@ https://pl.altapps.net/soft/hackerrank-com
 blake8 - formater w vscode
 git/gitlens
 devcotainers
+duckDB
