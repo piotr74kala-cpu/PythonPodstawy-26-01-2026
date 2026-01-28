@@ -25,3 +25,12 @@ print(type(object_data))  # <class 'datetime.datetime'>
 #                 milliseconds=0, minutes=0, hours=0, weeks=0
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-01-29
+
+products = [
+    {"sku": 1, "exp_date": today, "price": 200},
+    {"sku": 2, "exp_date": today, "price": 100},
+    {"sku": 3, "exp_date": tomorrow, "price": 500},
+    {"sku": 4, "exp_date": today, "price": 2000},
+    {"sku": 5, "exp_date": today, "price": 1200},
+    {"sku": 6, "exp_date": tomorrow, "price": 700},
+]
