@@ -72,3 +72,9 @@ cz1.ruszaj()
 cz2.ruszaj()
 # Ruszył-em w drogę
 # Ruszył-am w drogę
+
+lista = [cz1, cz2]
+for i in lista:
+    i.ruszaj()
+# Ruszył-em w drogę
+# Ruszył-am w drogę
