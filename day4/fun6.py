@@ -24,6 +24,7 @@ def srednia(name=None, *cyfry):  # * dowolna ilość argumentów pozycyjnych
 srednia()
 srednia(1, 2)
 srednia(1, 2, 3, 4)
+srednia("Radek", 1, 2, 3, 4)
 # ()
 # (1, 2)
 # (1, 2, 3, 4)
